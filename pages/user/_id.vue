@@ -10,6 +10,10 @@ export default {
     name: 'test',
     mode: 'out-in'
   },
+  // 验证，params中的id必须是数字
+  validate({ params }){
+    return /^\d+$/.test(params.id)
+  },
   data(){
     return{
       ids:null
