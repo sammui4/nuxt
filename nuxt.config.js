@@ -1,3 +1,9 @@
+/*
+ * @Author: w
+ * @Date: 2020-05-05 09:30:45
+ * @LastEditors: w
+ * @LastEditTime: 2020-05-05 11:14:52
+ */
 
 export default {
   mode: 'universal',
@@ -25,6 +31,7 @@ export default {
   css: [
     'element-ui/lib/theme-chalk/index.css'
   ],
+  // scss文件
   scss:[
     'assets/main.scss'
   ],
