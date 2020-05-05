@@ -14,5 +14,9 @@
     "nuxt": "^2.0.0",
     "element-ui": "^2.4.11"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "node-sass": "^4.14.1",
+    "sass-loader": "^8.0.2",
+    "scss-loader": "0.0.1"
+  }
 }
