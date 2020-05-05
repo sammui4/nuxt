@@ -28,6 +28,9 @@ export default {
         }
       },500)
     }
+  },
+  destroyed(){
+    this.timeOut = null;
   }
 }
 </script>
