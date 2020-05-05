@@ -2,7 +2,7 @@
  * @Author: w
  * @Date: 2020-05-05 09:30:45
  * @LastEditors: w
- * @LastEditTime: 2020-05-05 11:14:52
+ * @LastEditTime: 2020-05-05 11:44:00
  */
 
 export default {
@@ -29,11 +29,8 @@ export default {
   ** Global CSS
   */
   css: [
-    'element-ui/lib/theme-chalk/index.css'
-  ],
-  // scss文件
-  scss:[
-    'assets/main.scss'
+    'element-ui/lib/theme-chalk/index.css',
+    'assets/css/main.scss'
   ],
   /*
   ** Plugins to load before mounting the App
@@ -50,6 +47,7 @@ export default {
   ** Nuxt.js modules
   */
   modules: [
+
   ],
   /*
   ** Build configuration
