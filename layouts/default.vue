@@ -1,14 +1,17 @@
 <template>
   <div>
-    <div>默认布局中的顶部</div>
-    <div>
+    <div id="top">默认布局中的顶部</div>
+    <div class="mb-10">
       <nuxt-link to="/">主页</nuxt-link>
     </div>
-    <div>
+    <div class="mb-10">
       <nuxt-link to="/analyse/productLine">产品线</nuxt-link>
     </div>
-    <div>
+    <div class="mb-10">
       <nuxt-link to="/user/2">用户2</nuxt-link>
+    </div>
+    <div class="mb-10">
+      <nuxt-link to="/404">404</nuxt-link>
     </div>
     <nuxt  />
     
