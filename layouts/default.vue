@@ -13,6 +13,9 @@
     <div class="mb-10">
       <nuxt-link to="/404">404</nuxt-link>
     </div>
+    <button @click="addNumer">add </button>
+    
+
     <nuxt  />
     
     <div>默认布局中的底部</div>
@@ -20,7 +23,12 @@
 </template>
 <script>
 export default {
-  
+  middleware:'auth',
+  methods:{
+    addNumer(){
+      this.$store.commit('increase')
+    }
+  }
 }
 </script>
 <style>

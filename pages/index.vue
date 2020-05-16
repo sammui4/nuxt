@@ -3,6 +3,7 @@
     <div>
       <logo />
       <p>我的第一个尝试</p>
+      <div v-text="numbers"></div>
     </div>
   </div>
 </template>
@@ -14,7 +15,14 @@ export default {
   components: {
     Logo
   },
-  middleware:'auth'
+  computed:{
+    numbers(){
+      return this.$store.state.conter
+    }
+  },
+  methods:{
+    
+  }
 }
 </script>
 
