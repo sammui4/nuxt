@@ -15,7 +15,7 @@ export default {
     }
     PROMIS_CACHE.USER = instance({
       method:'get',
-      url:'/getData'
+      url:'/middlewareMethod'
     }).then(({data})=>{
       if(data.status==200){
         context.commit('set_user_info',data.data);
