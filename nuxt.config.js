@@ -2,7 +2,7 @@
  * @Author: w
  * @Date: 2020-05-05 09:30:45
  * @LastEditors: w
- * @LastEditTime: 2020-05-05 11:44:00
+ * @LastEditTime: 2020-08-26 10:18:21
  */
 
 export default {
@@ -36,7 +36,8 @@ export default {
   ** Plugins to load before mounting the App
   */
   plugins: [
-    '@/plugins/element-ui'
+    '@/plugins/element-ui',
+    { src: '~plugins/index.js', ssr: false }
   ],
   /*
   ** Nuxt.js dev-modules
@@ -49,6 +50,17 @@ export default {
   modules: [
 
   ],
+  axios: {
+    proxy: true
+  },
+  proxy: {
+    '/api': {
+      target: 'http://example.com',
+      pathRewrite: {
+        '^/api' : '/'
+      }
+    }
+  },
   /*
   ** Build configuration
   */
