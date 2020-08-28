@@ -2,7 +2,7 @@
  * @Author: w
  * @Date: 2020-05-05 09:30:45
  * @LastEditors: w
- * @LastEditTime: 2020-08-26 10:18:21
+ * @LastEditTime: 2020-08-28 10:14:27
  */
 
 export default {
@@ -70,6 +70,13 @@ export default {
     ** You can extend webpack config here
     */
     extend (config, ctx) {
+    }
+  },
+  terser:{
+    terserOptions:{
+      compress:{
+        drop_console:false
+      }
     }
   }
 }

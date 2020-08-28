@@ -18,10 +18,11 @@ export default {
   components: {
     Logo
   },
-  async  asyncData(context){
+  async asyncData(context){
     // 没有this对象，因为这是在服务端的东西
     let {data} = await instance({method:'get',url:'/asyncDataMethod'})
     if(data.status==200){
+      console.log('data.data',data.data)
       return {info:data.data}
     }
     return {info:{}}
